@@ -25,7 +25,7 @@ In this lab we will create our Azure Kubernetes Services (AKS) distributed compu
 5. Ensure you are using the correct Azure subscription you want to deploy AKS to.
     ```
     # View subscriptions
-    az account list
+    az account list -o table
     ```
     ```
     # Verify selected subscription
