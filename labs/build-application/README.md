@@ -33,7 +33,7 @@ In this lab we will build Docker containers for each of the application componen
     **NOTE: If the below role assignment fails due to permissions, we will do it the hard way and create an Image Pull Secret.**
 
     ```bash
-    sh ~/kubernetes-hackfest/labs/build-application/reg-acr.sh $RGNAME $CLUSTERNAME $ACRNAME
+    sh ~/Kubernetes-Best-Practices/labs/build-application/reg-acr.sh $RGNAME $CLUSTERNAME $ACRNAME
     ```
 
     ```bash
