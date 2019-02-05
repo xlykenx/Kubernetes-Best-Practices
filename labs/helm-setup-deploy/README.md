@@ -17,7 +17,7 @@ In this lab we will setup Helm in our AKS cluster and deploy our application wit
     * Initialize Helm and Tiller:
 
         ```bash
-        kubectl apply -f ~/kubernetes-hackfest/labs/helm-setup-deploy/rbac-config.yaml
+        kubectl apply -f ~/Kubernetes-Best-Practices//labs/helm-setup-deploy/rbac-config.yaml
         helm init --service-account tiller --upgrade
         ```
 
@@ -139,11 +139,11 @@ In this lab we will setup Helm in our AKS cluster and deploy our application wit
     ```bash
     # Application charts
 
-    helm upgrade --install data-api ~/kubernetes-hackfest/charts/data-api --namespace hackfest
-    helm upgrade --install quakes-api ~/kubernetes-hackfest/charts/quakes-api --namespace hackfest
-    helm upgrade --install weather-api ~/kubernetes-hackfest/charts/weather-api --namespace hackfest
-    helm upgrade --install flights-api ~/kubernetes-hackfest/charts/flights-api --namespace hackfest
-    helm upgrade --install service-tracker-ui ~/kubernetes-hackfest/charts/service-tracker-ui --namespace hackfest
+    helm upgrade --install data-api ~/Kubernetes-Best-Practices//charts/data-api --namespace hackfest
+    helm upgrade --install quakes-api ~/Kubernetes-Best-Practices/charts/quakes-api --namespace hackfest
+    helm upgrade --install weather-api ~/Kubernetes-Best-Practices//charts/weather-api --namespace hackfest
+    helm upgrade --install flights-api ~/Kubernetes-Best-Practices//charts/flights-api --namespace hackfest
+    helm upgrade --install service-tracker-ui ~/Kubernetes-Best-Practices//charts/service-tracker-ui --namespace hackfest
     ```
 
 5. Initialize application
