@@ -144,7 +144,7 @@ In this lab we will create our Azure Kubernetes Services (AKS) distributed compu
     --generate-ssh-keys -l $LOCATION \
     --node-count 3 \
     --enable-addons monitoring \
-    --no-wait
+    
     ```
 
 10. Verify your cluster status. The `ProvisioningState` should be `Succeeded`
