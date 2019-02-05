@@ -117,11 +117,11 @@ In this lab we will build Docker containers for each of the application componen
     In this step we will create a Docker container image for each of our microservices. We will use ACR Builder functionality to build and store these images in the cloud. 
 
     ```bash
-    az acr build -t hackfest/data-api:1.0 -r $ACRNAME --no-logs ~/kubernetes-hackfest/app/data-api
-    az acr build -t hackfest/flights-api:1.0 -r $ACRNAME --no-logs ~/kubernetes-hackfest/app/flights-api
-    az acr build -t hackfest/quakes-api:1.0 -r $ACRNAME --no-logs ~/kubernetes-hackfest/app/quakes-api
-    az acr build -t hackfest/weather-api:1.0 -r $ACRNAME --no-logs ~/kubernetes-hackfest/app/weather-api
-    az acr build -t hackfest/service-tracker-ui:1.0 -r $ACRNAME --no-logs ~/kubernetes-hackfest/app/service-tracker-ui
+    az acr build -t hackfest/data-api:1.0 -r $ACRNAME --no-logs ~/Kubernetes-Best-Practices/app/data-api
+    az acr build -t hackfest/flights-api:1.0 -r $ACRNAME --no-logs ~/Kubernetes-Best-Practices/app/flights-api
+    az acr build -t hackfest/quakes-api:1.0 -r $ACRNAME --no-logs ~/Kubernetes-Best-Practices/app/quakes-api
+    az acr build -t hackfest/weather-api:1.0 -r $ACRNAME --no-logs ~/Kubernetes-Best-Practices/app/weather-api
+    az acr build -t hackfest/service-tracker-ui:1.0 -r $ACRNAME --no-logs ~/Kubernetes-Best-Practices/app/service-tracker-ui
     ```
 
     You can see the status of the builds by running the command below.
