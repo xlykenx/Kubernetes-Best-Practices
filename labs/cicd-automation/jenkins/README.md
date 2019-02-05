@@ -28,7 +28,7 @@ The general workflow/result will be as follows:
 
 In order to trigger this pipeline you will need your own Github account and forked copy of this repo. Log into Github in the browser and get started. 
 
-1. Broswe to https://github.com/azure/kubernetes-hackfest and click "Fork" in the top right.
+1. Broswe to hhttps://github.com/eozkurt/Kubernetes-Best-Practices and click "Fork" in the top right.
 
     ![Jenkins GitHub Fork](./img/github-fork.png)
 
