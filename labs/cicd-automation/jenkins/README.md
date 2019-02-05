@@ -28,7 +28,7 @@ The general workflow/result will be as follows:
 
 In order to trigger this pipeline you will need your own Github account and forked copy of this repo. Log into Github in the browser and get started. 
 
-1. Broswe to hhttps://github.com/eozkurt/Kubernetes-Best-Practices and click "Fork" in the top right.
+1. Broswe to https://github.com/eozkurt/Kubernetes-Best-Practices and click "Fork" in the top right.
 
     ![Jenkins GitHub Fork](./img/github-fork.png)
 
@@ -57,9 +57,9 @@ In order to trigger this pipeline you will need your own Github account and fork
     > Note: If you have cloned the repo in earlier labs, the directory name will conflict. You can either delete the old one or just rename it before this step.
 
     ```bash
-    git clone https://github.com/<your-github-account>/kubernetes-hackfest.git
+    git clone https://github.com/<your-github-account>/Kubernetes-Best-Practices.git
 
-    cd kubernetes-hackfest/labs/cicd-automation/jenkins
+    cd Kubernetes-Best-Practices/labs/cicd-automation/jenkins
     ```
 
 #### Deploy Jenkins Helm Chart
