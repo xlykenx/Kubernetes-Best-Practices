@@ -50,6 +50,13 @@ An ingress controller is a piece of software that provides reverse proxy, config
         ```bash
         kubectl get service -l app=nginx-ingress --namespace kube-system
         ```
+    * Replace IP with Public IP Address above
+    * Replace DNSNAME with DNS name to be used
+
+    ```bash
+    # Set DNSNAME to be used later
+    export DNSNAME=<REPLACE-WITH-USER-INITIALS>ingress
+    ```
     
     * Update [configure-publicip-dns.sh](./configure-publicip-dns.sh) file and replace the IP
 
