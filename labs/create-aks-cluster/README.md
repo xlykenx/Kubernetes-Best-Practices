@@ -203,7 +203,7 @@ This lab creates namespaces that reflect a representative example of an organiza
 
     ```bash
     # Create namespaces
-    kubectl apply -f ~/kubernetes-hackfest/labs/create-aks-cluster/create-namespaces.yaml
+    kubectl apply -f ~/Kubernetes-Best-Practices/labs/create-aks-cluster/create-namespaces.yaml
 
     # Look at namespaces
     kubectl get ns
@@ -213,7 +213,7 @@ This lab creates namespaces that reflect a representative example of an organiza
 
     ```bash
     # Create namespace limits
-    kubectl apply -f ~/kubernetes-hackfest/labs/create-aks-cluster/namespace-limitranges.yaml
+    kubectl apply -f ~/Kubernetes-Best-Practices/labs/create-aks-cluster/namespace-limitranges.yaml
 
     # Get list of namespaces and drill into one
     kubectl get ns
@@ -224,7 +224,7 @@ This lab creates namespaces that reflect a representative example of an organiza
 
     ```bash
     # Create namespace quotas
-    kubectl apply -f ~/kubernetes-hackfest/labs/create-aks-cluster/namespace-quotas.yaml
+    kubectl apply -f ~/Kubernetes-Best-Practices/labs/create-aks-cluster/namespace-quotas.yaml
 
     # Get list of namespaces and drill into one
     kubectl get ns
@@ -258,8 +258,8 @@ This lab creates namespaces that reflect a representative example of an organiza
 5. Clean up limits, quotas, pods
 
     ```bash
-    kubectl delete -f ~/kubernetes-hackfest/labs/create-aks-cluster/namespace-limitranges.yaml
-    kubectl delete -f ~/kubernetes-hackfest/labs/create-aks-cluster/namespace-quotas.yaml
+    kubectl delete -f ~/Kubernetes-Best-Practices/labs/create-aks-cluster/namespace-limitranges.yaml
+    kubectl delete -f ~/Kubernetes-Best-Practices/labs/create-aks-cluster/namespace-quotas.yaml
     kubectl delete po nginx-limittest nginx-quotatest -n dev
 
     kubectl describe ns dev
