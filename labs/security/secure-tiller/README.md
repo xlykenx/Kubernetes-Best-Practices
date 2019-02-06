@@ -8,6 +8,8 @@ This lab walks through how to secure tiller in a single namespace to restrict ac
 
     ```bash
     # Create kubeconfig file for tiller Service Account (Useful for DevOps)
+    Kubernetes-Best-Practices/labs/security/secure-tiller
+    
     chmod a+x tiller-namespace-setup.sh
     ./tiller-namespace-setup.sh tiller dev
 
