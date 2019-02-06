@@ -137,46 +137,7 @@ This lab will walkthrough using the Core OS Prometheus Operator to add Monitorin
 
     ![Grafana Snapshot](img-grafana-dashboard.png)
 
-7. Deploy Sample App with Integrated and Custom Prometheus Metrics
 
-    * Create Namespace for Sample GO App
-    ```bash
-    # Create custom Namespace to deploy sample app to.
-    kubectl create namespace sample-app
-    ```
-    * Build [Sample GO App](../../../app/sample-go/README.md) Container & Update Deployment Manifest
-    ```bash
-    # 1. Use ACR Build to create Container and Push to ACR
-    # 2. Update Container Image in Deployment manifest (prom-graf-sample-go-app.yaml) 
-    # Deploy the Sample GO Application with Updated Container Image
-    kubectl apply -f prom-graf-sample-go-app.yaml -n sample-app
-    # Deploy the ServiceMonitor to Monitor the Sample GO App
-    kubectl apply -f prom-graf-servicemonitor.yaml -n monitoring
-    # Deploy the ConfigMap to Raise Alerts for the Sample GO App
-    kubectl apply -f prom-graf-configmap.yaml -n monitoring
-    ```
-    * If there is interest in how Prometheus Metrics and Custom Metrics can be added to an existing application take a look at the [GO Code](../../../app/sample-go/app.go).
-
-8. Check Metrics and Alerts are Working for Sample GO App
-
-    * Using the technique above, port-forward to the Prometheus Dashboard.
-    * Check custom metric in the deployed sample GO App:
-
-    ![Prometheus Dashboard](img-prometheus-dashboard.png)
-
-    * Check Replica Count custom alert for the sample GO App:
-
-    ![Prometheus Alerts](img-prometheus-alerts.png)
-
-9. Fix Replica Count Custom Alert
-
-    * Scale the Deployment to 3 replicas to stop the Alert from FIRING.
-    ```bash
-    kubectl scale deploy sample-go -n sample-app --replicas=3
-    ```
-    * Using the technique above, port-forward to the Prometheus Dashboard and check that the Alert is now Green and not FIRING. Be patient, this will take a couple of minutes for the metrics to be updated and the evaluation process to respond accordingly.
-
-    ![Prometheus Alerts](img-prometheus-alerts-resolved.png)
 
 ## Troubleshooting / Debugging
 
