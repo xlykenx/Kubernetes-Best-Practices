@@ -16,7 +16,7 @@ This lab has 2 components. First we will use Azure Container Instances to deploy
 1. Create container image for batch processing
 
     ```bash
-    az acr build -t hackfest/data-updater:1.0 -r $ACRNAME --no-logs ~/kubernetes-hackfest/app/data-updater
+    az acr build -t hackfest/data-updater:1.0 -r $ACRNAME --no-logs ~/Kubernetes-Best-Practices/app/data-updater
     ```
 
 2. Configure ACR credentials to be stored in Azure Key Vault
