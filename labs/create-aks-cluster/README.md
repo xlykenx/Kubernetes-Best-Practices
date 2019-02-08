@@ -9,7 +9,7 @@ In this lab we will create our Azure Kubernetes Services (AKS) distributed compu
 ## Instructions
 
 1. Login to Azure Portal at http://portal.azure.com.
-2. Open the Azure Cloud Shell and choose Bash Shell (do not choose Powershell)
+2. Open the Azure Cloud Shell and choose Bash Shell!! (do not choose Powershell)
 
     ![Azure Cloud Shell](img-cloud-shell.png "Azure Cloud Shell")
 
@@ -62,9 +62,8 @@ In this lab we will create our Azure Kubernetes Services (AKS) distributed compu
     ```bash
     # Persist for Later Sessions in Case of Timeout
     APPID=<appId>
-    echo export APPID=$APPID >> ~/.bashrc
+
     CLIENTSECRET=<password>
-    echo export CLIENTSECRET=$CLIENTSECRET >> ~/.bashrc
     ```
 
 7. Create a  unique identifier suffix for resources to be created in this lab.
@@ -117,7 +116,8 @@ In this lab we will create our Azure Kubernetes Services (AKS) distributed compu
 
     KubernetesVersion    Upgrades
     -------------------  ----------------------
-    1.11.5               None available
+    1.12.4               None available             
+    1.11.5               1.12.4
     1.11.4               1.11.5
     1.10.9               1.11.4, 1.11.5
     1.10.8               1.10.9, 1.11.4, 1.11.5
@@ -155,7 +155,7 @@ In this lab we will create our Azure Kubernetes Services (AKS) distributed compu
     ```bash
     Name                 Location    ResourceGroup         KubernetesVersion    ProvisioningState    Fqdn
     -------------------  ----------  --------------------  -------------------  -------------------  -------------------------------------------------------------------
-    ODLaks-v2-gbb-16502  eastus   ODL_aks-v2-gbb-16502  1.11.4                Succeeded odlaks-v2--odlaks-v2-gbb-16-b23acc-17863579.hcp.centralus.azmk8s.io
+    ODLaks-v2-gbb-16502  eastus   ODL_aks-v2-gbb-16502  1.12.4                Succeeded odlaks-v2--odlaks-v2-gbb-16-b23acc-17863579.hcp.centralus.azmk8s.io
     ```
 
 11. Get the Kubernetes config files for your new AKS cluster
