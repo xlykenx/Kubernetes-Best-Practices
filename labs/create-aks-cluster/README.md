@@ -1,4 +1,4 @@
-# Lab 1: Create AKS Cluster
+# Lab 1: Create Azure Kubernetes Service (AKS) Cluster
 
 In this lab we will create our Azure Kubernetes Services (AKS) distributed compute cluster.
 
