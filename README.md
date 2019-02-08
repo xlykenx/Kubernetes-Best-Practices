@@ -9,7 +9,7 @@ The following are the basic requirements to **start** the labs. Individual labs 
 
 ## Application
 
-![Application architecture diagram](/assets/img/app-architecture.png "Application architecture diagram")
+![Application architecture diagram](/assets/img/application-architecture.png "Application architecture diagram")
 
 
 ## Labs
