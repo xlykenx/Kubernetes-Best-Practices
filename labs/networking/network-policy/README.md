@@ -126,7 +126,7 @@ In this lab we will use Kube-Router for Network Policy Management. Kube-Router w
 
     ```bash
     # Cleanup Network Policies
-    kubectl delete networkpolicy --all
+    kubectl delete networkpolicy --all -n hackfest
    kubectl get networkpolicy -n hackfest
     ```
 
