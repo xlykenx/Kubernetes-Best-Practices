@@ -35,7 +35,7 @@ In this lab we will use Kube-Router for Network Policy Management. Kube-Router w
 
     ```bash
     kubectl apply -f ./labs/networking/network-policy/deny-all.yaml
-    kubectl get networkpolicy
+    kubectl get networkpolicy -n hackfest
     ```
 
 3. Test out the Application by going to the Dashboard and clicking on the Refresh Data button for one of the APIs. You should see that the Refresh is taking an extra long time and eventually comes back with an error. This is becuase you have denied all Ingress to Pods, which means all traffic into the Cluster.
