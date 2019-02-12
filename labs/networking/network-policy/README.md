@@ -69,7 +69,7 @@ In this lab we will use Kube-Router for Network Policy Management. Kube-Router w
     ```bash
     # Apply the Allow Network Policy
     kubectl apply -f ./labs/networking/network-policy/allow-default-namespace.yaml
-    kubectl get networkpolicy
+    kubectl get networkpolicy -n hackfest
     # Let's Test the nslookup again
     kubectl exec -it $(kubectl get pod -n hackfest -l "app=quakes-api" -o jsonpath='{.items[0].metadata.name}') -n hackfest -- /bin/sh
     # Once inside the Pod try to do a nslookup on the flights API
@@ -94,10 +94,10 @@ In this lab we will use Kube-Router for Network Policy Management. Kube-Router w
     ```bash
     # Delete Previous Network Allow Policy
     kubectl delete -f ./labs/networking/network-policy/allow-default-namespace.yaml
-    kubectl get networkpolicy
+    kubectl get networkpolicy -n hackfest
     # Apply the Allow Network Policy
     kubectl apply -f ./labs/networking/network-policy/allow-default-namespace-with-egress.yaml
-    kubectl get networkpolicy
+    kubectl get networkpolicy -n hackfest
     # Let's Test the nslookup again
     kubectl exec -it $(kubectl get pod -n hackfest -l "app=quakes-api" -o jsonpath='{.items[0].metadata.name}') -n hackfest -- /bin/sh
     # Once inside the Pod try to do a nslookup on the flights API
@@ -127,7 +127,7 @@ In this lab we will use Kube-Router for Network Policy Management. Kube-Router w
     ```bash
     # Cleanup Network Policies
     kubectl delete networkpolicy --all
-    kubectl get networkpolicy
+   kubectl get networkpolicy -n hackfest
     ```
 
 ## Troubleshooting / Debugging
