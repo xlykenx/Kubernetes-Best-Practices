@@ -18,14 +18,16 @@ In this lab we will scale our application in various ways including scaling our 
     ```bash
     kubectl scale deployment service-tracker-ui -n hackfest --replicas=3
     
-    kubectl get pod -n hackfest
-    
     ```
 
     > Note: the `replicas` parameter could be a part of the Helm chart and updated with a `helm upgrade` command. Based on our deployment method, this is more appropriate.
 
 2. Validate the number of pods is now 3
 
+   ```bash
+   kubectl get pod -n hackfest
+   ```
+   
 ### Horizontal Pod Autoscaler
 
 The Kubernetes Horizontal Pod Autoscaler (HPA) automatically scales the number of pods in a replication controller, deployment or replica set based on observed CPU utilization (or, with custom metrics support, on some other application-provided metrics)
