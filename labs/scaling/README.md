@@ -37,7 +37,7 @@ The Kubernetes Horizontal Pod Autoscaler (HPA) automatically scales the number o
 2. Deploy the hpa resource
 
     ```bash
-    kubectl apply -f ~/kubernetes-hackfest/labs/scaling/hpa.yaml -n hackfest
+    kubectl apply -f ~/Kubernetes-Best-Practices/labs/scaling/hpa.yaml -n hackfest
     ```
 
 3. Validate the number of pods is now 5 which is our `minReplicas` set with the HPA
