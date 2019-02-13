@@ -98,11 +98,11 @@ Linkerd is a Cloud Native Computing Foundation (CNCF) project.
 7. Use `helm template` to create manifest for injection
 
     ```bash
-    helm template ~/kubernetes-hackfest/charts/data-api > ~/kubernetes-hackfest/data-api.yaml
-    helm template ~/kubernetes-hackfest/charts/flights-api > ~/kubernetes-hackfest/flights-api.yaml
-    helm template ~/kubernetes-hackfest/charts/quakes-api > ~/kubernetes-hackfest/quakes-api.yaml
-    helm template ~/kubernetes-hackfest/charts/weather-api > ~/kubernetes-hackfest/weather-api.yaml
-    helm template ~/kubernetes-hackfest/charts/service-tracker-ui > ~/kubernetes-hackfest/service-tracker-ui.yaml
+    helm template ~/kubernetes-hackfest/charts/data-api > ~/Kubernetes-Best-Practices/data-api.yaml
+    helm template ~/kubernetes-hackfest/charts/flights-api > ~/Kubernetes-Best-Practices/flights-api.yaml
+    helm template ~/kubernetes-hackfest/charts/quakes-api > ~/Kubernetes-Best-Practices/quakes-api.yaml
+    helm template ~/kubernetes-hackfest/charts/weather-api > ~/Kubernetes-Best-Practices/weather-api.yaml
+    helm template ~/kubernetes-hackfest/charts/service-tracker-ui > ~/Kubernetes-Best-Practices/service-tracker-ui.yaml
     ```
 
 8. Re-deploy application using `linkerd inject`
