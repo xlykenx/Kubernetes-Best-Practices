@@ -55,14 +55,7 @@ This lab will walkthrough using the Core OS Prometheus Operator to add Monitorin
     kubectl get secrets -n monitoring
     ```
 
-3. Update Prometheus Operator Deployment to Correct Prometheus Metrics Capture
 
-    ```bash
-    # Edit kubelet to be http instead of https (Fixes Prometheus kubelet API Metrics)
-    # Edit kube-dns to update Prometheus ENV (Fixes DNS API Metrics)
-    # https://github.com/coreos/prometheus-operator/issues/1522
-    kubectl edit servicemonitors kube-prometheus-exporter-kubelets -n monitoring
-    kubectl patch deployment kube-dns-v20 -n kube-system --patch "$(cat prom-graf-kube-dns-metrics-patch.yaml)"
     ```
 
 4. Expose Services to Public IP's
